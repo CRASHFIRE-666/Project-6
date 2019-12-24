@@ -2,11 +2,15 @@
 using namespace std;
 int main()
 {
-    setlocale(LC_ALL, "Russian");
-    cout<<"Введите числа"<<endl;
-    int a, b, c, k, S;
-    cin>>a>>b>>c;
-    k=(a/c)*(b/c);
-    S=(a*b)-k;
-    cout<<"Количество квадратов="<<k<<", Остаток="<<S<<endl;
+    int a, b, c, n, r;
+    
+    cin >> a >> b >> c;
+    
+    n = (a / c) * (b / c);
+    
+    r = a * b - c * c * n;
+    
+    cout << n << " " << r << endl;
+    
+    return 0;
 }
