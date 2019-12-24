@@ -2,11 +2,22 @@
 using namespace std;
 int main()
 {
+    
     setlocale(LC_ALL, "Russian");
-    cout<<"Введите число"<<endl;
-    int k,s;
-    cin>>k;
-    s=k%7;
-    cout<<s<<endl;
+    int k;
+    
+    cin >> k;
+    
+    if (k > 0 && k < 366)
+    {
+        cout << k % 7 << endl;
+    }
+    else
+    {
+        cout << "НЕВЕРНОЕ ЗНАЧЕНИЕ" << endl;
+    }
+    
+    
+    
     return 0;
 }
