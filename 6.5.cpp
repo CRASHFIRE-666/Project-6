@@ -2,11 +2,15 @@
 using namespace std;
 int main()
 {
-    setlocale(LC_ALL, "Russian");
-    cout<<"Введите число"<<endl;
-    int a,n;
-    cin>>a;
-    n=((a-1)/100)+1;
-    cout<<"Столетие="<<n<<endl;
+    int year;
+    cin >> year;
+    if (year % 100 > 0)
+    {
+        cout << year / 100 + 1<< endl;
+    }
+    else
+    {
+        cout << year / 100 << endl;
+    }
     return 0;
 }
